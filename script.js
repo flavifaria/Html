@@ -7,5 +7,7 @@ function atualizarRelogio() {
     const horas = String(agora.getHours()).padStart(2,'0');
     const minutos = String(agora.getMinutes()).padStart(2,'0');
     const segundos = String(agora.getSeconds()).padStart(2,'0');
-    relogioElement.textContent = `${horas}:${minutos}:${segundos} `
+    relogio.innerHTML = `${horas}:${minutos}:${segundos} `
 }
+
+setTimeout(atualizarRelogio,1000)

@@ -10,4 +10,5 @@ function atualizarRelogio() {
     relogio.innerHTML = `${horas}:${minutos}:${segundos} `
 }
 
-setTimeout(atualizarRelogio,1000)
+atualizarRelogio();
+setInterval(atualizarRelogio,1000);
